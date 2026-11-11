@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dalsegno-tokyo.github.io/sitemap.xml

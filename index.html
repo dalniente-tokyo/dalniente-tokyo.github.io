@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAL SEGNO Tokyo</title>
+<meta name="description" content="DAL SEGNO（ダル・セーニョ）は、楽譜の演奏記号をモチーフにした東京発のインディペンデント・ジュエリーブランド。セーニョ記号のブレスレットとバッグチャーム、各100点限定。Collection 001 近日公開。">
+<meta name="keywords" content="DAL SEGNO, ダルセーニョ, セーニョ, segno, 音楽記号 ジュエリー, 音楽 アクセサリー, ブレスレット, バッグチャーム, 東京 ジュエリーブランド">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://dalsegno-tokyo.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DAL SEGNO">
+<meta property="og:title" content="DAL SEGNO Tokyo — Return to where it matters.">
+<meta property="og:description" content="楽譜の記号を、身につけるオブジェに。東京発のインディペンデント・ジュエリー。Collection 001 SEGNO 近日公開。">
+<meta property="og:url" content="https://dalsegno-tokyo.github.io/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140'%3E%3Crect width='100' height='140' fill='%230c0c0e'/%3E%3Cg fill='none' stroke='%23e0e1e5' stroke-linecap='round'%3E%3Cpath d='M68 33 C66 19 52 13 42 17 C29 22 27 38 39 48 L61 64 C75 76 75 96 63 106 C51 116 32 112 30 99' stroke-width='9'/%3E%3Cline x1='22' y1='124' x2='78' y2='16' stroke-width='6'/%3E%3C/g%3E%3Cg fill='%23e0e1e5'%3E%3Ccircle cx='22' cy='62' r='7'/%3E%3Ccircle cx='78' cy='80' r='7'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DAL SEGNO","alternateName":["ダル・セーニョ","DAL SEGNO Tokyo"],"url":"https://dalsegno-tokyo.github.io/","description":"楽譜の演奏記号をモチーフにした東京発のインディペンデント・ジュエリーブランド","address":{"@type":"PostalAddress","addressLocality":"Tokyo","addressCountry":"JP"},"sameAs":["https://www.instagram.com/dalsegno.tokyo/"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@300;400;500;600&family=Shippori+Mincho:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a score read top to bottom — each section opens on a five-line stave with a rehearsal mark (A, B, C…), the footer returns "D.S." to the sign at the top. One theme: a dark jewelry case, silver is the only accent. */
+:root{
+  --case:#0c0c0e;
+  --velvet:#141417;
+  --rule:#2b2b31;
+  --silver:#c8cad0;
+  --text:#ebebee;
+  --muted:#8d8d96;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,"Hiragino Sans",sans-serif;
+  --jp:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--case);color:var(--text);font-family:var(--body);font-weight:400;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;word-break:auto-phrase;margin:0;line-height:1.08}
+p{margin:0}
+.jp{font-family:var(--jp)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:1px solid var(--silver);outline-offset:4px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(12,12,14,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:64px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark svg{width:16px;height:22px}
+.mark b{font-family:var(--display);font-weight:500;letter-spacing:.32em;font-size:15px}
+.mark small{font-size:10px;letter-spacing:.3em;color:var(--muted)}
+nav.menu{display:flex;gap:28px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+nav.menu a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav.menu a:hover{color:var(--text)}
+nav.menu a.cta{color:var(--text);border:1px solid var(--rule);padding:6px 14px}
+@media (max-width:760px){nav.menu a:not(.cta){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:72px 0 64px}
+.hero .kicker{display:flex;gap:16px;align-items:center;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.hero .kicker i{display:block;width:40px;height:1px;background:var(--muted)}
+.hero h1{font-size:clamp(46px,7.4vw,104px);font-style:italic;margin:28px 0 20px;letter-spacing:-.01em}
+.hero .jp-line{font-size:clamp(18px,2vw,22px);color:var(--silver);letter-spacing:.12em}
+.hero .lede{max-width:46ch;color:var(--muted);margin-top:24px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--silver);cursor:pointer;font-family:var(--body);transition:background .25s,color .25s}
+.btn.solid{background:var(--silver);color:var(--case)}
+.btn.solid:hover{background:var(--text)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--rule)}
+.btn.ghost:hover{border-color:var(--silver)}
+.hero-sign{position:relative;display:grid;place-items:center}
+.hero-sign svg.big{width:min(400px,80%);height:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}
+.hero-sign .edition{position:absolute;right:0;bottom:4%;text-align:right;font-size:11px;color:var(--muted)}
+.hero-sign .edition strong{display:block;font-family:var(--mono);font-weight:500;font-size:22px;color:var(--text);letter-spacing:.06em}
+.staff-bg{position:absolute;inset:auto 0 18% 0;height:72px;background:repeating-linear-gradient(to bottom,var(--rule) 0 1px,transparent 1px 18px);opacity:.55;pointer-events:none}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:48px}.hero-sign{order:-1}.hero-sign svg.big{width:200px}.hero-sign .edition{position:static;text-align:center;margin-top:16px}.staff-bg{display:none}}
+
+/* section openings: a stave with a rehearsal mark */
+section.mv{padding:96px 0;border-bottom:1px solid var(--rule)}
+.stave{display:flex;align-items:center;gap:20px;margin-bottom:48px}
+.stave .reh{flex:none;width:44px;height:44px;border:1.5px solid var(--text);display:grid;place-items:center;font-family:var(--display);font-weight:500;font-size:22px}
+.stave .lines{flex:1;height:33px;background:repeating-linear-gradient(to bottom,var(--rule) 0 1px,transparent 1px 8px)}
+.stave .label{flex:none;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(34px,4.6vw,60px)}
+.sec-head h2 em{font-style:italic}
+.sec-head p{color:var(--muted);max-width:52ch}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:20px}}
+
+/* story: three symbols */
+.formula{font-family:var(--display);font-size:clamp(22px,3vw,34px);letter-spacing:.2em;color:var(--silver);margin-bottom:12px}
+.symbols{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
+.sym{padding:40px 32px 36px 0;display:grid;grid-template-rows:auto auto auto 1fr;gap:14px}
+.sym + .sym{padding-left:32px;border-left:1px solid var(--rule)}
+.sym svg{width:56px;height:78px}
+.sym .name{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.sym h3{font-size:30px;letter-spacing:.14em}
+.sym .no{font-size:11px;color:var(--muted)}
+.sym .def{font-size:14px;color:var(--muted)}
+.sym blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:21px;line-height:1.35}
+.sym blockquote span{display:block;font-family:var(--jp);font-style:normal;font-size:14px;color:var(--muted);margin-top:8px}
+@media (max-width:860px){.symbols{grid-template-columns:1fr}.sym,.sym + .sym{padding:32px 0;border-left:0;border-bottom:1px solid var(--rule)}}
+
+/* collection */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product{background:var(--velvet);border:1px solid var(--rule);display:flex;flex-direction:column}
+.product .plate{aspect-ratio:1/1;display:grid;place-items:center;border-bottom:1px solid var(--rule);background:radial-gradient(ellipse at 50% 40%,#1f1f24 0%,var(--velvet) 70%);position:relative}
+.product .plate svg{width:88%;height:auto}
+.product .serial{position:absolute;top:16px;left:18px;font-size:11px;color:var(--muted)}
+.product .body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
+.product h3{font-size:26px;letter-spacing:.04em}
+.product .price{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--rule);padding-top:14px;margin-top:auto}
+.product .price b{font-family:var(--mono);font-weight:500;font-size:20px}
+.product .price small{color:var(--muted);font-size:12px}
+.product p{font-size:14px;color:var(--muted)}
+.specs{list-style:none;padding:0;margin:0;font-size:13px;display:grid;gap:6px}
+.specs li{display:flex;gap:10px}
+.specs li::before{content:"";flex:none;width:10px;height:1px;background:var(--muted);margin-top:11px}
+.product .btn{justify-content:center;margin-top:6px}
+@media (max-width:960px){.products{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.products{grid-template-columns:1fr}}
+
+/* craft */
+.process{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);border-top:1px solid var(--rule)}
+.process li{padding:28px 18px 0 0;position:relative}
+.process li + li{padding-left:18px;border-left:1px solid var(--rule)}
+.process .n{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.process h3{font-family:var(--body);font-weight:500;font-size:15px;letter-spacing:.02em;margin:10px 0 6px;line-height:1.3}
+.process p{font-size:13px;color:var(--muted);line-height:1.6}
+.process li.key h3{color:var(--silver)}
+.process li.key::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;background:var(--silver)}
+@media (max-width:1000px){.process{grid-template-columns:1fr 1fr}.process li,.process li + li{padding:22px 16px 22px 0;border-left:0;border-bottom:1px solid var(--rule)}}
+.districts{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+.district{border:1px solid var(--rule);padding:28px;display:grid;gap:8px}
+.district .jp{font-size:26px}
+.district .en{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.district p{font-size:14px;color:var(--muted)}
+.materials{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.materials span{border:1px solid var(--rule);padding:6px 14px;font-size:12px;letter-spacing:.1em;color:var(--muted)}
+@media (max-width:700px){.districts{grid-template-columns:1fr}}
+
+/* packaging: the serial card is the one light object on the page */
+.pack{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.card{background:#f1f1f3;color:#111114;aspect-ratio:1.6/1;padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 40px 80px rgba(0,0,0,.55);transform:rotate(-2.5deg)}
+.card .row{display:flex;justify-content:space-between;align-items:flex-start;font-size:10px;letter-spacing:.3em;text-transform:uppercase}
+.card svg{width:28px;height:40px}
+.card .num{font-family:var(--mono);font-size:clamp(28px,4vw,44px);font-weight:500;letter-spacing:.02em}
+.card .num span{color:#8a8a92}
+.card .motto{font-family:var(--display);font-style:italic;font-size:clamp(15px,1.8vw,19px)}
+.contents{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}
+.contents li{padding:14px 0;border-bottom:1px solid var(--rule);font-size:14px;display:flex;gap:12px}
+.contents li .mono{color:var(--muted);font-size:11px;padding-top:3px}
+@media (max-width:860px){.pack{grid-template-columns:1fr}.card{max-width:440px}}
+
+/* pre-order */
+.pre{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:22px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:6px 16px}
+.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--mono);color:var(--muted);font-size:12px;padding-top:3px;grid-row:span 2}
+.steps b{font-weight:500}
+.steps span{font-size:14px;color:var(--muted)}
+form.order{background:var(--velvet);border:1px solid var(--rule);padding:32px;display:grid;gap:18px}
+.field{display:grid;gap:8px}
+.field label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{background:var(--case);border:1px solid var(--rule);color:var(--text);font:inherit;font-size:15px;padding:12px 14px;border-radius:0;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--silver)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.summary{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--rule);padding-top:16px}
+.summary b{font-family:var(--mono);font-weight:500;font-size:24px}
+.summary small{color:var(--muted);font-size:12px}
+.notice{display:none;border:1px solid var(--silver);padding:16px 18px;font-size:14px}
+.notice.show{display:block}
+.notice .jp{display:block;color:var(--muted);margin-top:4px}
+@media (max-width:860px){.pre{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+
+/* next */
+.next{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.coming{border:1px solid var(--rule);padding:36px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.coming svg{width:60px;height:84px;opacity:.55}
+.coming .mono{font-size:11px;color:var(--muted)}
+.coming h3{font-size:34px;letter-spacing:.14em;margin:6px 0 10px}
+.coming p{font-family:var(--display);font-style:italic;font-size:19px;color:var(--silver)}
+@media (max-width:760px){.next{grid-template-columns:1fr}}
+
+footer{padding:56px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end}
+footer .ds{display:inline-flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--display);font-style:italic;font-size:22px}
+footer .ds svg{width:16px;height:22px}
+footer .meta{font-size:12px;color:var(--muted);text-align:right;line-height:1.9}
+
+.info{display:grid;grid-template-columns:110px 1fr;gap:12px 20px;margin:0;font-size:14px;border-top:1px solid var(--rule);padding-top:20px}
+.info dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.info dd{margin:0}
+.btn[disabled]{opacity:.5;cursor:wait}
+.soon{margin-top:6px;border:1px solid var(--rule);padding:13px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.launch-box{background:var(--velvet);border:1px solid var(--rule);padding:32px;display:grid;gap:28px;align-content:start}
+.status{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--silver)}
+.status i{width:7px;height:7px;border-radius:50%;background:var(--silver)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shine{display:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f7f9"/>
+      <stop offset=".38" stop-color="#9c9ea6"/>
+      <stop offset=".55" stop-color="#eceef1"/>
+      <stop offset=".8" stop-color="#77797f"/>
+      <stop offset="1" stop-color="#d6d8dc"/>
+    </linearGradient>
+    <linearGradient id="silverHero" x1="0" y1="0" x2="1" y2="1" spreadMethod="reflect">
+      <stop offset="0" stop-color="#f6f7f9"/>
+      <stop offset=".35" stop-color="#8f9199"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset=".7" stop-color="#6f7178"/>
+      <stop offset="1" stop-color="#dcdde1"/>
+      <animateTransform class="shine" attributeName="gradientTransform" type="translate" values="-0.6 -0.6; 0.6 0.6; -0.6 -0.6" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <symbol id="segno" viewBox="0 0 100 140">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M68 33 C66 19 52 13 42 17 C29 22 27 38 39 48 L61 64 C75 76 75 96 63 106 C51 116 32 112 30 99" stroke-width="9"/>
+        <line x1="22" y1="124" x2="78" y2="16" stroke-width="6"/>
+      </g>
+      <g stroke="none">
+        <circle cx="68" cy="33" r="7"/>
+        <circle cx="30" cy="99" r="7"/>
+        <circle cx="22" cy="62" r="7"/>
+        <circle cx="78" cy="80" r="7"/>
+      </g>
+    </symbol>
+    <symbol id="coda" viewBox="0 0 100 140">
+      <g fill="none" stroke-linecap="round">
+        <ellipse cx="50" cy="70" rx="25" ry="33" stroke-width="8"/>
+        <line x1="50" y1="16" x2="50" y2="124" stroke-width="5"/>
+        <line x1="10" y1="70" x2="90" y2="70" stroke-width="5"/>
+      </g>
+    </symbol>
+    <symbol id="fermata" viewBox="0 0 100 140">
+      <path d="M12 96 C12 46 88 46 88 96 C80 62 20 62 12 96 Z" stroke="none"/>
+      <circle cx="50" cy="86" r="8" stroke="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="DAL SEGNO トップへ">
+      <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#segno" stroke="var(--text)" fill="var(--text)"/></svg>
+      <b>DAL SEGNO</b><small>TOKYO</small>
+    </a>
+    <nav class="menu" aria-label="メインメニュー">
+      <a href="#story">Story</a>
+      <a href="#collection">Collection 001</a>
+      <a href="#craft">Craft</a>
+      <a href="#packaging">Packaging</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#contact">Get notified</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="staff-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="kicker"><i></i>Collection 001 — Segno</div>
+      <h1>Return to where it&nbsp;matters.</h1>
+      <p class="jp jp-line">いちばん大切な瞬間へ、もう一度。</p>
+      <p class="lede">楽譜の上で「ここへ戻れ」を示す記号、セーニョ。音楽を知る人だけが気づくそのサインを、東京のアトリエで一点ずつ仕上げるブレスレットとバッグチャームにしました。各デザイン100点限定、シリアルナンバー入り。</p>
+      <div class="actions">
+        <a class="btn solid" href="#collection">View the collection</a>
+        <a class="btn ghost" href="#launch">Launch info</a>
+      </div>
+    </div>
+    <div class="hero-sign">
+      <svg class="big" viewBox="0 0 100 140" role="img" aria-label="セーニョ記号">
+        <use href="#segno" stroke="url(#silverHero)" fill="url(#silverHero)"/>
+      </svg>
+      <div class="edition">Limited edition<strong>— / 100</strong>Handcrafted in Tokyo</div>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="story">
+  <div class="wrap">
+    <div class="stave"><div class="reh">A</div><div class="lines"></div><div class="label">Story</div></div>
+    <div class="sec-head">
+      <div>
+        <p class="formula">MUSIC × OBJECT × STORY</p>
+        <h2>音符ではなく、<em>楽譜の記号</em>を身につける。</h2>
+      </div>
+      <p>♪や♫のようなわかりやすいモチーフは使いません。選ぶのは、楽譜を読む人なら意味がわかる演奏記号だけ。記号が持つ意味と、その形そのものの美しさを、手元に置けるオブジェにしています。</p>
+    </div>
+    <div class="symbols">
+      <article class="sym">
+        <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#segno" stroke="url(#silver)" fill="url(#silver)"/></svg>
+        <div class="name"><h3>SEGNO</h3><span class="no mono">COLLECTION 001</span></div>
+        <p class="def">楽曲の中で、この記号の位置へ戻って演奏し直すことを示す。</p>
+        <blockquote>Return to where it matters.<span>いちばん大切な瞬間へ、もう一度。</span></blockquote>
+      </article>
+      <article class="sym">
+        <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#coda" stroke="url(#silver)" fill="url(#silver)"/></svg>
+        <div class="name"><h3>CODA</h3><span class="no mono">COLLECTION 002</span></div>
+        <p class="def">曲の終わり、新しい結びの部分へ移ることを示す。</p>
+        <blockquote>Every ending begins something new.<span>終わりは、次のはじまりにつながっている。</span></blockquote>
+      </article>
+      <article class="sym">
+        <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#fermata" stroke="url(#silver)" fill="url(#silver)"/></svg>
+        <div class="name"><h3>FERMATA</h3><span class="no mono">COLLECTION 003</span></div>
+        <p class="def">音や休符を、本来の長さより十分にのばすことを示す。</p>
+        <blockquote>Stay a little longer.<span>大切な時間に、もう少しだけ。</span></blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="collection">
+  <div class="wrap">
+    <div class="stave"><div class="reh">B</div><div class="lines"></div><div class="label">Collection 001</div></div>
+    <div class="sec-head">
+      <h2>Collection 001 — <em>Segno</em></h2>
+      <p>最初のコレクションは3型のみ。オリジナルで起こしたセーニョのパーツを中心に、チェーン、留め具、刻印まで一つずつ組み上げます。</p>
+    </div>
+    <div class="products">
+      <article class="product">
+        <div class="plate"><span class="serial mono">No. — / 100</span><svg id="b01" viewBox="0 0 400 360" role="img" aria-label="SEGNO Bracelet 01 のイラスト"></svg></div>
+        <div class="body">
+          <h3>SEGNO Bracelet 01</h3>
+          <p>繊細なケーブルチェーンに、大きめのセーニョを一つ。</p>
+          <ul class="specs">
+            <li>オリジナル SEGNO メインパーツ</li>
+            <li>ブランドロゴ刻印・高品質クラスプ</li>
+            <li>シリアルナンバー入り</li>
+          </ul>
+          <div class="price"><b>¥75,000</b><small>税込 · 100点限定</small></div>
+          <span class="soon">Coming soon · 近日公開</span>
+        </div>
+      </article>
+      <article class="product">
+        <div class="plate"><span class="serial mono">No. — / 100</span><svg id="b02" viewBox="0 0 400 360" role="img" aria-label="SEGNO Bracelet 02 のイラスト"></svg></div>
+        <div class="body">
+          <h3>SEGNO Bracelet 02</h3>
+          <p>同じセーニョを小ぶりにし、存在感のある太めのチェーンに合わせたモデル。</p>
+          <ul class="specs">
+            <li>オリジナル SEGNO パーツ(スモール)</li>
+            <li>ブランドロゴ刻印・高品質クラスプ</li>
+            <li>シリアルナンバー入り</li>
+          </ul>
+          <div class="price"><b>¥75,000</b><small>税込 · 100点限定</small></div>
+          <span class="soon">Coming soon · 近日公開</span>
+        </div>
+      </article>
+      <article class="product">
+        <div class="plate"><span class="serial mono">No. — / 100</span><svg id="bc" viewBox="0 0 400 360" role="img" aria-label="SEGNO Bag Charm のイラスト"></svg></div>
+        <div class="body">
+          <h3>SEGNO Bag Charm</h3>
+          <p>大きなセーニョのオブジェにチェーンとブランドタグを合わせた、バッグ・キーのためのチャーム。</p>
+          <ul class="specs">
+            <li>ラージ SEGNO オブジェ</li>
+            <li>チェーン・ブランドタグ</li>
+            <li>シリアルナンバー入り</li>
+          </ul>
+          <div class="price"><b>¥55,000〜</b><small>税込 · 仕様により変動</small></div>
+          <span class="soon">Coming soon · 近日公開</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="craft">
+  <div class="wrap">
+    <div class="stave"><div class="reh">C</div><div class="lines"></div><div class="label">Craft</div></div>
+    <div class="sec-head">
+      <h2>Handcrafted <em>in Tokyo.</em></h2>
+      <p>記号のパーツは既製品を使わず、すべて自社でデザインし制作します。チェーンや金具は東京の専門店から選び、組み立てと仕上げ、検品、シリアルの付与までをアトリエで行います。</p>
+    </div>
+    <ol class="process">
+      <li><span class="n">01</span><h3>Design</h3><p>記号の意味と形からデザインを起こす</p></li>
+      <li class="key"><span class="n">02</span><h3>Symbol parts</h3><p>SEGNO・CODAなどのパーツを自社制作</p></li>
+      <li><span class="n">03</span><h3>Chain &amp; fittings</h3><p>高品質なチェーンと金属パーツを調達</p></li>
+      <li><span class="n">04</span><h3>Assembly</h3><p>アトリエで一点ずつ組み立て・仕上げ</p></li>
+      <li><span class="n">05</span><h3>Inspection</h3><p>全品を検品</p></li>
+      <li><span class="n">06</span><h3>Serial</h3><p>シリアルナンバーを付与</p></li>
+      <li><span class="n">07</span><h3>Packaging</h3><p>専用ボックスに納めてお届け</p></li>
+    </ol>
+    <div class="districts">
+      <div class="district"><span class="en">Asakusabashi</span><span class="jp">浅草橋</span><p>チェーン、留め具、金属パーツ。サンプル制作を支える、東京のパーツの街。</p></div>
+      <div class="district"><span class="en">Okachimachi</span><span class="jp">御徒町</span><p>シルバー925、ゴールド、天然石。上位コレクションへ広げるための、ジュエリー職人の街。</p></div>
+    </div>
+    <div class="materials" aria-label="素材">
+      <span>Silver 925</span><span>Stainless Steel</span><span>Brass + Plating</span><span>Natural Stone</span><span>K10 · K18 · Pt — future</span>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="packaging">
+  <div class="wrap">
+    <div class="stave"><div class="reh">D</div><div class="lines"></div><div class="label">Packaging</div></div>
+    <div class="pack">
+      <div class="card" aria-label="シリアルカードの例">
+        <div class="row"><span>Dal Segno · Tokyo</span><svg viewBox="0 0 100 140" aria-hidden="true"><use href="#segno" stroke="#111114" fill="#111114"/></svg></div>
+        <div>
+          <div class="num">SEGNO 017 <span>/ 100</span></div>
+          <div class="motto">Return to where it matters.</div>
+        </div>
+        <div class="row"><span>Bracelet 01</span><span>Handcrafted in Tokyo</span></div>
+      </div>
+      <div>
+        <h2 style="font-size:clamp(30px,4vw,48px)">一点ごとに、<em style="font-style:italic">番号と物語</em>を。</h2>
+        <p style="color:var(--muted);margin-top:18px;max-width:50ch">箱を開けた瞬間から、手に取るまでがひとつの体験です。すべての作品に、その記号の物語とシリアル番号を記したカードが添えられます。</p>
+        <ul class="contents">
+          <li><span class="mono">01</span>専用ハードボックス</li>
+          <li><span class="mono">02</span>保存用ポーチ</li>
+          <li><span class="mono">03</span>ブランドカード</li>
+          <li><span class="mono">04</span>ストーリーカード</li>
+          <li><span class="mono">05</span>シリアルカード</li>
+          <li><span class="mono">06</span>お手入れガイド</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="launch">
+  <div class="wrap">
+    <div class="stave"><div class="reh">E</div><div class="lines"></div><div class="label">Launch</div></div>
+    <div class="pre">
+      <div>
+        <h2 style="font-size:clamp(34px,4.6vw,56px)">ご注文の数だけ、<em style="font-style:italic">つくります。</em></h2>
+        <p style="color:var(--muted);margin:20px 0 32px;max-width:46ch">Collection 001 は受注生産でお届けする予定です。在庫を持たず、いただいたご予約の数だけを東京のアトリエで制作します。プレオーダーの開始はメールと Instagram でお知らせします。</p>
+        <a class="btn solid" href="#contact">Get notified</a> <a class="btn ghost" href="https://www.instagram.com/dalsegno.tokyo/">Instagram</a>
+        <p class="mono" style="color:var(--muted);font-size:12px;margin-top:14px">@dalsegno.tokyo</p>
+      </div>
+      <div class="launch-box">
+        <div class="status"><i></i>Collection 001 — In preparation</div>
+        <ol class="steps">
+          <li><b>プレオーダー開始</b><span>モデルと数量を選んでご予約いただけます。</span></li>
+          <li><b>制作</b><span>締め切り後、ご予約数に合わせて一点ずつ制作します。</span></li>
+          <li><b>シリアルの付与</b><span>ご予約順にシリアルナンバーを刻みます。</span></li>
+          <li><b>お届け</b><span>専用パッケージに納めて発送します。</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mv">
+  <div class="wrap">
+    <div class="stave"><div class="reh">F</div><div class="lines"></div><div class="label">Next</div></div>
+    <div class="next">
+      <div class="coming">
+        <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#coda" stroke="url(#silver)" fill="url(#silver)"/></svg>
+        <div><span class="mono">COLLECTION 002 · COMING</span><h3>CODA</h3><p>Every ending begins something new.</p></div>
+      </div>
+      <div class="coming">
+        <svg viewBox="0 0 100 140" aria-hidden="true"><use href="#fermata" stroke="url(#silver)" fill="url(#silver)"/></svg>
+        <div><span class="mono">COLLECTION 003 · COMING</span><h3>FERMATA</h3><p>Stay a little longer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mv" id="contact">
+  <div class="wrap">
+    <div class="stave"><div class="reh">G</div><div class="lines"></div><div class="label">Contact</div></div>
+    <div class="pre">
+      <div>
+        <h2 style="font-size:clamp(34px,4.6vw,56px)">公開のお知らせと、<em style="font-style:italic">お問い合わせ。</em></h2>
+        <p style="color:var(--muted);margin:20px 0 28px;max-width:46ch">Collection 001 の公開・プレオーダー開始のお知らせをご希望の方、取材・コラボレーション・ミュージシャンの方へのご提供に関するご相談は、こちらからご連絡ください。</p>
+        <dl class="info">
+          <dt>Based in</dt><dd>Tokyo, Japan</dd>
+          <dt>Instagram</dt><dd><a href="https://www.instagram.com/dalsegno.tokyo/">@dalsegno.tokyo</a></dd>
+          <dt>Status</dt><dd>Collection 001 — 近日公開(販売開始前)</dd>
+        </dl>
+      </div>
+      <form class="order" id="contactForm" action="https://formsubmit.co/rkdtm0202@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="[DAL SEGNO] サイトからのお問い合わせ">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <div class="field"><label for="f-type">内容 / Topic</label>
+          <select id="f-type" name="topic">
+            <option>公開・プレオーダーのお知らせを希望 / Notify me at launch</option>
+            <option>商品について / About the products</option>
+            <option>取材・コラボレーション / Press &amp; collaboration</option>
+            <option>その他 / Other</option>
+          </select>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-name">お名前 / Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">メール / Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="f-note">メッセージ / Message</label><textarea id="f-note" name="message" rows="4" placeholder="ご希望のモデルやご質問など(任意)"></textarea></div>
+        <div class="notice" id="notice" role="status" aria-live="polite"></div>
+        <button class="btn solid" id="sendBtn" type="submit" style="justify-content:center">送信する / Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="ds" href="#top"><svg viewBox="0 0 100 140" aria-hidden="true"><use href="#segno" stroke="var(--text)" fill="var(--text)"/></svg>D.S. — back to the sign</a>
+    <div class="meta">Independent jewelry · Handcrafted in Tokyo<br>Tokyo, Japan<br>Instagram @dalsegno.tokyo<br>© 2026 DAL SEGNO</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var NS="http://www.w3.org/2000/svg";
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+
+  // A bracelet seen at an angle: links laid around an ellipse, back half dimmed, charm hanging at the front.
+  function bracelet(svg,o){
+    var cx=200,cy=128,rx=150,ry=62,n=o.links;
+    var back=el("g",{opacity:.45},svg), front=el("g",{},svg);
+    for(var i=0;i<n;i++){
+      var t=i/n*Math.PI*2, x=cx+rx*Math.cos(t), y=cy+ry*Math.sin(t);
+      var ang=Math.atan2(ry*Math.cos(t),-rx*Math.sin(t))*180/Math.PI;
+      var g=Math.sin(t)<0?back:front;
+      var flat=i%2===0;
+      el("ellipse",{cx:x,cy:y,rx:o.len,ry:flat?o.w:o.w*.38,fill:"none",stroke:"url(#silver)","stroke-width":o.stroke,transform:"rotate("+ang+" "+x+" "+y+")"},g);
+    }
+    // clasp at the back
+    el("rect",{x:cx-14,y:cy-ry-8,width:28,height:14,rx:6,fill:"none",stroke:"url(#silver)","stroke-width":3},back);
+    // jump ring + charm at the front
+    var by=cy+ry;
+    el("circle",{cx:cx,cy:by+9,r:7,fill:"none",stroke:"url(#silver)","stroke-width":3},front);
+    var w=o.charm, h=w*1.4;
+    el("use",{href:"#segno",x:cx-w/2,y:by+12,width:w,height:h,stroke:"url(#silver)",fill:"url(#silver)"},front);
+  }
+  bracelet(document.getElementById("b01"),{links:46,len:8,w:5,stroke:2,charm:92});
+  bracelet(document.getElementById("b02"),{links:30,len:12.5,w:8.5,stroke:4,charm:60});
+
+  // Bag charm: ring and clasp on top, vertical chain, large sign, side tag.
+  (function(svg){
+    var cx=200;
+    el("circle",{cx:cx,cy:34,r:22,fill:"none",stroke:"url(#silver)","stroke-width":5},svg);
+    el("rect",{x:cx-9,y:54,width:18,height:30,rx:9,fill:"none",stroke:"url(#silver)","stroke-width":4},svg);
+    for(var i=0;i<9;i++){
+      var y=92+i*13;
+      el("ellipse",{cx:cx,cy:y,rx:i%2?2.6:5.5,ry:8,fill:"none",stroke:"url(#silver)","stroke-width":2.6},svg);
+    }
+    el("circle",{cx:cx,cy:212,r:7,fill:"none",stroke:"url(#silver)","stroke-width":3},svg);
+    el("use",{href:"#segno",x:cx-52,y:212,width:104,height:146,stroke:"url(#silver)",fill:"url(#silver)"},svg);
+    // tag hanging from the ring
+    el("line",{x1:cx+18,y1:48,x2:cx+44,y2:84,stroke:"url(#silver)","stroke-width":2},svg);
+    el("rect",{x:cx+30,y:84,width:30,height:42,rx:3,fill:"none",stroke:"url(#silver)","stroke-width":2.5,transform:"rotate(-14 "+(cx+45)+" 105)"},svg);
+    var t=el("text",{x:cx+45,y:110,"text-anchor":"middle","font-family":"Bodoni Moda, Georgia, serif","font-size":13,fill:"#c8cad0",transform:"rotate(-14 "+(cx+45)+" 105)"},svg);
+    t.textContent="DS";
+  })(document.getElementById("bc"));
+
+  var form=document.getElementById("contactForm"), notice=document.getElementById("notice"), btn=document.getElementById("sendBtn");
+  function say(html){notice.innerHTML=html;notice.classList.add("show");}
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=document.getElementById("f-name"), email=document.getElementById("f-email");
+    if(!name.value.trim()||!email.value.trim()||!email.checkValidity()){
+      say("お名前と正しいメールアドレスを入力してください。<span class=\"jp\">Please enter your name and a valid email.</span>");
+      (name.value.trim()?email:name).focus(); return;
+    }
+    btn.disabled=true;
+    fetch(form.action.replace("formsubmit.co/","formsubmit.co/ajax/"),{method:"POST",headers:{"Accept":"application/json"},body:new FormData(form)})
+      .then(function(r){return r.json().then(function(d){if(!r.ok||d.success==="false"||d.success===false)throw d;});})
+      .then(function(){form.reset();say("送信しました。ありがとうございます。<span class=\"jp\">Thank you. Your message has been sent.</span>");})
+      .catch(function(){say("送信できませんでした。時間をおいて再度お試しいただくか、Instagram の DM でご連絡ください。<span class=\"jp\">Sending failed. Please try again later or send us a DM on Instagram.</span>");})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>
